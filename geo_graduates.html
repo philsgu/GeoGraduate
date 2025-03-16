@@ -1,0 +1,2114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6e8c1f080642f65fee92927f445d3045 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6e8c1f080642f65fee92927f445d3045" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6e8c1f080642f65fee92927f445d3045 = L.map(
+                "map_6e8c1f080642f65fee92927f445d3045",
+                {
+                    center: [37.0902, -95.7129],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_70dec77247ba88dce715e1395abbd446 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_70dec77247ba88dce715e1395abbd446.addTo(map_6e8c1f080642f65fee92927f445d3045);
+        
+    
+            var marker_cluster_1fb13fb45acd007f3ccb602e5747db69 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_136565628ad96b9ec2718bf4d40f3a88 = L.marker(
+                [38.571019, -121.4565822],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_46b3cceeb5a764a8f51b5ae583a050f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_479ac4f882e6e9d805b55834951f5f32 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48dedddeb5c755497b95cb67d73e3b24 = $(`<div id="html_48dedddeb5c755497b95cb67d73e3b24" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Ugochi-Nwokafor.jpg?id=g0Bx6J&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImcwQng2SiIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.lB5OEPfPLIfsRmCedshk40hY8Qp9dM2-ZxMv34uNt-g&signature=b886b3d7b2c4f7caa8266052201f2ff96fa2cf4cbc75d5339a339d7dd178ad3a alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Ugochi Nwokafor</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2024</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Primary Care Elica Healthcare </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_479ac4f882e6e9d805b55834951f5f32.setContent(html_48dedddeb5c755497b95cb67d73e3b24);
+            
+        
+
+        marker_136565628ad96b9ec2718bf4d40f3a88.bindPopup(popup_479ac4f882e6e9d805b55834951f5f32)
+        ;
+
+        
+    
+    
+            marker_136565628ad96b9ec2718bf4d40f3a88.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_136565628ad96b9ec2718bf4d40f3a88.setIcon(icon_46b3cceeb5a764a8f51b5ae583a050f7);
+            
+    
+            var marker_1b527f613cd0b0ef41306899425a7740 = L.marker(
+                [36.8339657, -119.7642629],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_2111a0257d29fda81d215fa4ad35149e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd2d2150335abf99ea928d908b6cae9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_895d17f7e70651f227484cbdba5f71d1 = $(`<div id="html_895d17f7e70651f227484cbdba5f71d1" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Nischint-Gondara.jpg?id=y6Obod&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ink2T2JvZCIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.4PH2JJLSjQ6zYiBi4G0g2zHePEd_525lXZ50sfsntfI&signature=0d127c0f583687748e0605663136941a6b7ecc46e766f7ce0cc9419af908800b alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Nischint Gondara</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2024</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Samc Vituity </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Hospital</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_bd2d2150335abf99ea928d908b6cae9a.setContent(html_895d17f7e70651f227484cbdba5f71d1);
+            
+        
+
+        marker_1b527f613cd0b0ef41306899425a7740.bindPopup(popup_bd2d2150335abf99ea928d908b6cae9a)
+        ;
+
+        
+    
+    
+            marker_1b527f613cd0b0ef41306899425a7740.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1b527f613cd0b0ef41306899425a7740.setIcon(icon_2111a0257d29fda81d215fa4ad35149e);
+            
+    
+            var marker_ac8a10d5d77efd1436965ab65a846b72 = L.marker(
+                [33.9245968, -117.8762827],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_ccf9f7efbdbde67d99dcd995e8b21907 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5cc7ece982fca6b5f4e8711664828e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb9b8e1843737ce492f5896f996afcb6 = $(`<div id="html_cb9b8e1843737ce492f5896f996afcb6" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Shakeel-Ahmad.jpg?id=2e2Yy9&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJlMll5OSIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.SDtDHIMqvTKW01IqtobJF5iDKHRHhCKPRNQXyg1BW48&signature=97fd92d7f9ad66bd40d27ac4305bd79ca104f7d639e3eea87a5d707cb38f629b alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Shakeel Ahmad</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2024</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Kaiser Permanente Brea Medical </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_a5cc7ece982fca6b5f4e8711664828e9.setContent(html_cb9b8e1843737ce492f5896f996afcb6);
+            
+        
+
+        marker_ac8a10d5d77efd1436965ab65a846b72.bindPopup(popup_a5cc7ece982fca6b5f4e8711664828e9)
+        ;
+
+        
+    
+    
+            marker_ac8a10d5d77efd1436965ab65a846b72.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ac8a10d5d77efd1436965ab65a846b72.setIcon(icon_ccf9f7efbdbde67d99dcd995e8b21907);
+            
+    
+            var marker_7bf3586d3f9af5793a3f1cd521edd5e5 = L.marker(
+                [36.8339657, -119.7642629],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_12a4ff6ce7a627010b5a4114fb11b20c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a0015f53a890a26736491922165699a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_053177aff17fee0726e30df3ec1de420 = $(`<div id="html_053177aff17fee0726e30df3ec1de420" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/William-Latson-IM-.jpg?id=48ZbrO&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ4WmJyTyIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.0tTBSaeVn3hg8mx7mVEWLZTHD9wA-xWKdMApw7Pqouo&signature=f9eff184ed1a3b75fa50f85661b2640d0ac6d788f67fe011f663ab2d1fde022b alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">William Latson</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2024</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">IM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Samc</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Hospital</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_4a0015f53a890a26736491922165699a.setContent(html_053177aff17fee0726e30df3ec1de420);
+            
+        
+
+        marker_7bf3586d3f9af5793a3f1cd521edd5e5.bindPopup(popup_4a0015f53a890a26736491922165699a)
+        ;
+
+        
+    
+    
+            marker_7bf3586d3f9af5793a3f1cd521edd5e5.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7bf3586d3f9af5793a3f1cd521edd5e5.setIcon(icon_12a4ff6ce7a627010b5a4114fb11b20c);
+            
+    
+            var marker_c88b9de94da934ad2dfe793a703f6662 = L.marker(
+                [36.8379624, -119.8630726],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_e85286a891da561016faa62d62ab64ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3442a1dca29aaac60b74c9e02a38d3ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2dd92d2ec95ff1891ec2932f60282193 = $(`<div id="html_2dd92d2ec95ff1891ec2932f60282193" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Dr.-Stella-Chan_white-coat_2x3_150dpi_rgb.jpg?id=48Z0Dr&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ4WjBEciIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.KUMx9JFP2vPUK05ZDrXG6uFSXKYOEMTmH3O9yQInleE&signature=42ba8e7ae66a9c603679c9eeed4d6b7f6b6c0d1f7f1759cfb9e5d627e6565160 alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Stella Chan</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2024</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">United Health Center </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_3442a1dca29aaac60b74c9e02a38d3ef.setContent(html_2dd92d2ec95ff1891ec2932f60282193);
+            
+        
+
+        marker_c88b9de94da934ad2dfe793a703f6662.bindPopup(popup_3442a1dca29aaac60b74c9e02a38d3ef)
+        ;
+
+        
+    
+    
+            marker_c88b9de94da934ad2dfe793a703f6662.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c88b9de94da934ad2dfe793a703f6662.setIcon(icon_e85286a891da561016faa62d62ab64ba);
+            
+    
+            var marker_5966dc1fd548db19994db94eee7bb149 = L.marker(
+                [36.8339657, -119.7642629],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_6561dbb66c7200b9ec0272f4d303406d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd6f21bd266702f97db2fb3511983b1b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ba0cfe5fada1883f076e148445a6229 = $(`<div id="html_4ba0cfe5fada1883f076e148445a6229" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Parisa-Rezapoor-MD.JPG?id=r6XZzL&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InI2WFp6TCIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.-quHJ5x8h5cjzJUoo7CRWwaQ4kd-OP0GWZyWMUY-J3o&signature=1839a7de429325c64568d47e1e87d9a4768f1badce99f53b6e81611164336d6f alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Parisa Rezapoor</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2021</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">IM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Samc</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Hospital</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_fd6f21bd266702f97db2fb3511983b1b.setContent(html_4ba0cfe5fada1883f076e148445a6229);
+            
+        
+
+        marker_5966dc1fd548db19994db94eee7bb149.bindPopup(popup_fd6f21bd266702f97db2fb3511983b1b)
+        ;
+
+        
+    
+    
+            marker_5966dc1fd548db19994db94eee7bb149.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5966dc1fd548db19994db94eee7bb149.setIcon(icon_6561dbb66c7200b9ec0272f4d303406d);
+            
+    
+            var marker_24674fc8b082f9c57fac022282dd274c = L.marker(
+                [36.8339657, -119.7642629],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_3fc4ba662c795ae46f71cb5c451d7772 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9efb3b55597dc7e603af99d7f3d49c37 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1948cfa952ebe190b1c5db67a90b8775 = $(`<div id="html_1948cfa952ebe190b1c5db67a90b8775" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Danielson.photo-pro.jpg?id=a6WLO2&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImE2V0xPMiIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.YwS2ilxpfQmbvdmugdLWOPn2ZZohCvIPED3o0_TQ_Fw&signature=f3bb8d70fbcbe931a13d8be8d77ae4016fda4a7eeb60608e3f1d7cfb56485b39 alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Adam Danielson</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2022</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">IM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Samc</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Hospital</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_9efb3b55597dc7e603af99d7f3d49c37.setContent(html_1948cfa952ebe190b1c5db67a90b8775);
+            
+        
+
+        marker_24674fc8b082f9c57fac022282dd274c.bindPopup(popup_9efb3b55597dc7e603af99d7f3d49c37)
+        ;
+
+        
+    
+    
+            marker_24674fc8b082f9c57fac022282dd274c.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_24674fc8b082f9c57fac022282dd274c.setIcon(icon_3fc4ba662c795ae46f71cb5c451d7772);
+            
+    
+            var marker_40ddfc47e5350778a2ec299df44cad07 = L.marker(
+                [36.8399546, -119.7643768],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_cf7faf0bab4e5f60a4a8e54810775cb9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_776cf2859679474ea837e02e247c68fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_caf2303d60666f8ba9c030eb8bb745ff = $(`<div id="html_caf2303d60666f8ba9c030eb8bb745ff" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Bahareh-Askari-Atapour-IM-.jpg?id=OzR2eY&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik96UjJlWSIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.Daq0y7MoaA2Iew3M8XLXzYD8EjUmgqVuxen5jskMLak&signature=b0e2205c2bc20393b2f5bb1970f1d133b3ca4a6eebbeb4c6f7c66e0812fb5d7e alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Bahareh Askari-Atapour</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2024</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">IM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Samc Im Clinic</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_776cf2859679474ea837e02e247c68fc.setContent(html_caf2303d60666f8ba9c030eb8bb745ff);
+            
+        
+
+        marker_40ddfc47e5350778a2ec299df44cad07.bindPopup(popup_776cf2859679474ea837e02e247c68fc)
+        ;
+
+        
+    
+    
+            marker_40ddfc47e5350778a2ec299df44cad07.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_40ddfc47e5350778a2ec299df44cad07.setIcon(icon_cf7faf0bab4e5f60a4a8e54810775cb9);
+            
+    
+            var marker_8989947c06f2e8f0e0d881a9875d5cd0 = L.marker(
+                [36.7429513, -119.7842303],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_21377a6c09aeec07491976b478bf5816 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_163345148ae54977fa8d1bc6f607c37d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8c8c96cc511fa5b937c59e0cf09f254 = $(`<div id="html_e8c8c96cc511fa5b937c59e0cf09f254" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Juan-Carlos-De-La-Cruz-Mayhua.jpg?id=pKgE8b&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InBLZ0U4YiIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.-h9KwHCDeDsn2jCi0qmgO-djKii44J0CXJ8xXSSRjp0&signature=aaa89f924cbb66c78cd23a3ca8452e3ec14d38d65b304edebc5d9dd01b7f8b16 alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Juan Carlos De La Cruz Mayhua</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2023</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">IM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Community Regional Medical Center</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Hospital</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_163345148ae54977fa8d1bc6f607c37d.setContent(html_e8c8c96cc511fa5b937c59e0cf09f254);
+            
+        
+
+        marker_8989947c06f2e8f0e0d881a9875d5cd0.bindPopup(popup_163345148ae54977fa8d1bc6f607c37d)
+        ;
+
+        
+    
+    
+            marker_8989947c06f2e8f0e0d881a9875d5cd0.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8989947c06f2e8f0e0d881a9875d5cd0.setIcon(icon_21377a6c09aeec07491976b478bf5816);
+            
+    
+            var marker_6257bc656974303194ba3d2e7ad9b818 = L.marker(
+                [36.8387255, -119.7774818],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_e31f595673d04e4af7786c40dbfc6a66 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a20d3c94da41b3facdb620b6e49e5eda = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7b3f9f00f2bfa0b8530550707684884 = $(`<div id="html_b7b3f9f00f2bfa0b8530550707684884" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Kevin-Orita.JPG?id=AdkEBl&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkFka0VCbCIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.amqOef8tBUCO0CCVz4cnkJzrwQejoIqSkgPo5lHaP_I&signature=f3e699ea42a2286521ea473f4ab5a5a3857f134dd6da0e066de909b6be8c304f alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Kevin Orita</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2022</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">IM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">The Medical Partners Group</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_a20d3c94da41b3facdb620b6e49e5eda.setContent(html_b7b3f9f00f2bfa0b8530550707684884);
+            
+        
+
+        marker_6257bc656974303194ba3d2e7ad9b818.bindPopup(popup_a20d3c94da41b3facdb620b6e49e5eda)
+        ;
+
+        
+    
+    
+            marker_6257bc656974303194ba3d2e7ad9b818.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6257bc656974303194ba3d2e7ad9b818.setIcon(icon_e31f595673d04e4af7786c40dbfc6a66);
+            
+    
+            var marker_759f0b1eff26eb1bd837bce4ab701920 = L.marker(
+                [38.4430328, -122.7001822],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_de11ae9d528580def4964de25697862e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54bc86a70097e8b3940da271a9a46ed7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18e327208d9aa4a2261765bd7be64651 = $(`<div id="html_18e327208d9aa4a2261765bd7be64651" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Hannah-Knox.jpg?id=jyKj0a&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Imp5S2owYSIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.cEsNuhQ7kNgIEtcJVIVvFVKQX2tv8hnvn4wrM1NL_bI&signature=495a5a538a2819b387b4435e5d7d97ce73ebf22e84a97710465be378720e431d alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Hannah Knox</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2021</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">IM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Providence Medical Group</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_54bc86a70097e8b3940da271a9a46ed7.setContent(html_18e327208d9aa4a2261765bd7be64651);
+            
+        
+
+        marker_759f0b1eff26eb1bd837bce4ab701920.bindPopup(popup_54bc86a70097e8b3940da271a9a46ed7)
+        ;
+
+        
+    
+    
+            marker_759f0b1eff26eb1bd837bce4ab701920.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_759f0b1eff26eb1bd837bce4ab701920.setIcon(icon_de11ae9d528580def4964de25697862e);
+            
+    
+            var marker_6fa127232bcc7ae13931275298d33c63 = L.marker(
+                [36.83790640000001, -119.7779153],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_9edf1b7c56cc45a8a18fc32440eb4807 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a9b0471be8a4c623f31addd77a96b327 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d70ec5911e8b5370759974a5406ca675 = $(`<div id="html_d70ec5911e8b5370759974a5406ca675" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Harkanwal-Kaur-Dhillon.jpg?id=e6bVVk&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImU2YlZWayIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.00HTqD1lH8lNRuTPKlb1Ud4rKr_LvoiexbRqJqLBh7Y&signature=630c1fefcc7284ee5710d0bfa48f19402a78a31c02369237b3eca5f5510ce6b8 alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Harkanwal Dhillon</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2023</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">IM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Community Medical Providers</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_a9b0471be8a4c623f31addd77a96b327.setContent(html_d70ec5911e8b5370759974a5406ca675);
+            
+        
+
+        marker_6fa127232bcc7ae13931275298d33c63.bindPopup(popup_a9b0471be8a4c623f31addd77a96b327)
+        ;
+
+        
+    
+    
+            marker_6fa127232bcc7ae13931275298d33c63.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6fa127232bcc7ae13931275298d33c63.setIcon(icon_9edf1b7c56cc45a8a18fc32440eb4807);
+            
+    
+            var marker_cb8f57f887a9963cd2512b4375ecbc1d = L.marker(
+                [34.07607480000001, -118.0459077],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_e8b90386242b9af73d25fb4356129ce0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0163ef85c31bdebce7a598ef59e3d7f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b33e56c48659faf6c4562946fd3914f7 = $(`<div id="html_b33e56c48659faf6c4562946fd3914f7" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Luis-Molina.jpg?id=xpGWyJ&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InhwR1d5SiIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.jCwAU9VOaJf12v_ZJaf48vvbZhxPxFzmx5SZKIZbWy0&signature=2e307ff7c7837e3afb950159da4c6b055f2bde902a59fcbad501666ed7af9de3 alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Luis Molina Rojas</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2024</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Altamed </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_0163ef85c31bdebce7a598ef59e3d7f4.setContent(html_b33e56c48659faf6c4562946fd3914f7);
+            
+        
+
+        marker_cb8f57f887a9963cd2512b4375ecbc1d.bindPopup(popup_0163ef85c31bdebce7a598ef59e3d7f4)
+        ;
+
+        
+    
+    
+            marker_cb8f57f887a9963cd2512b4375ecbc1d.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cb8f57f887a9963cd2512b4375ecbc1d.setIcon(icon_e8b90386242b9af73d25fb4356129ce0);
+            
+    
+            var marker_28d5b52ad4280d1c004d1e67bf0e1173 = L.marker(
+                [36.8388469, -119.6611827],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_49d17a24cf86e07057ba1e49ffa79aa6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0dd89717b6e9bf7e1b20442ec25dc06 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b6ff662393e3765ab6302c6846c46f2 = $(`<div id="html_5b6ff662393e3765ab6302c6846c46f2" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Imrin-Sidhu.jpg?id=YQ22Rq&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IllRMjJScSIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.awbaWdnkeemL41i8oNKSt1owwoZ9CgM7rypdm_izvUc&signature=33930b6b86bcad2e51515a994bb17c8887174ca36d07d9f1822c05e33853911e alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Imrin Bhinder</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2023</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">IM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Chpg</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Hospital</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_e0dd89717b6e9bf7e1b20442ec25dc06.setContent(html_5b6ff662393e3765ab6302c6846c46f2);
+            
+        
+
+        marker_28d5b52ad4280d1c004d1e67bf0e1173.bindPopup(popup_e0dd89717b6e9bf7e1b20442ec25dc06)
+        ;
+
+        
+    
+    
+            marker_28d5b52ad4280d1c004d1e67bf0e1173.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_28d5b52ad4280d1c004d1e67bf0e1173.setIcon(icon_49d17a24cf86e07057ba1e49ffa79aa6);
+            
+    
+            var marker_a8d894f08bfa987796b542b91ad18bb5 = L.marker(
+                [36.8388469, -119.6611827],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_3ab5086b2ff5ec60412ae6972e87fd00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48e0d0b5f4c585e79ae5286a0a41c147 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ddbbaa797f185287997d58cdac0eb5cc = $(`<div id="html_ddbbaa797f185287997d58cdac0eb5cc" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Abdul-Alcozie.jpg?id=7WQQlP&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjdXUVFsUCIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.9ja5fR9lZXbsKa-0eABZbsdzv3N-91qtuUb7jwQo7Jw&signature=907c7d810eb5026646ea8d623c44106a2433a4b9106e58db5ed3ddde768a564c alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Abdul Alcozie</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2024</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Chpg </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Hospital</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_48e0d0b5f4c585e79ae5286a0a41c147.setContent(html_ddbbaa797f185287997d58cdac0eb5cc);
+            
+        
+
+        marker_a8d894f08bfa987796b542b91ad18bb5.bindPopup(popup_48e0d0b5f4c585e79ae5286a0a41c147)
+        ;
+
+        
+    
+    
+            marker_a8d894f08bfa987796b542b91ad18bb5.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a8d894f08bfa987796b542b91ad18bb5.setIcon(icon_3ab5086b2ff5ec60412ae6972e87fd00);
+            
+    
+            var marker_a24fda8b2a372323fca4431bc2e733a6 = L.marker(
+                [36.8388469, -119.6611827],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_e7a87c64038da33e107f3b0606798b8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f29ca215fcdceb4d7aea9e8d75f0846e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_730132614ad99c45f47b0f02acc15026 = $(`<div id="html_730132614ad99c45f47b0f02acc15026" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Divya-Dev-IM-.jpg?id=y6OO9W&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ink2T085VyIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.82spnLVBn1qx1lxz90yA1mHbcSW-23rl3BJ69Kqwp-I&signature=d2ba07238f2b1dcb077e2ace1d2ffbd3f8df1b3c1b488c4ed609dc6b7c984239 alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Divya Dev</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2024</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">IM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Clovis Community Medical Center</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Hospital</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_f29ca215fcdceb4d7aea9e8d75f0846e.setContent(html_730132614ad99c45f47b0f02acc15026);
+            
+        
+
+        marker_a24fda8b2a372323fca4431bc2e733a6.bindPopup(popup_f29ca215fcdceb4d7aea9e8d75f0846e)
+        ;
+
+        
+    
+    
+            marker_a24fda8b2a372323fca4431bc2e733a6.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a24fda8b2a372323fca4431bc2e733a6.setIcon(icon_e7a87c64038da33e107f3b0606798b8a);
+            
+    
+            var marker_45f175fc57eb2fb6d14603e913ed2230 = L.marker(
+                [37.5520324, -121.9761177],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_9addce44b487d983420ba48b0aedef37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6aee14a4c22eda7baf1ebcb9a10d2a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53e23cf365e31d4bbf9cb2f597c6c88e = $(`<div id="html_53e23cf365e31d4bbf9cb2f597c6c88e" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Andrew-Phan.jpg?id=xpGGPd&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InhwR0dQZCIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.cDKMARInZQqJ8resNpv_cThBQFKloabdxMq0fYj879Y&signature=bf59ce2d450d5125dac6bba9c063dc7246db147b2442238af135a92601523500 alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Andrew Phan</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2024</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Kaiser Permanente </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_d6aee14a4c22eda7baf1ebcb9a10d2a4.setContent(html_53e23cf365e31d4bbf9cb2f597c6c88e);
+            
+        
+
+        marker_45f175fc57eb2fb6d14603e913ed2230.bindPopup(popup_d6aee14a4c22eda7baf1ebcb9a10d2a4)
+        ;
+
+        
+    
+    
+            marker_45f175fc57eb2fb6d14603e913ed2230.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_45f175fc57eb2fb6d14603e913ed2230.setIcon(icon_9addce44b487d983420ba48b0aedef37);
+            
+    
+            var marker_5c6634ec89499aa687b3ebcb92088fcc = L.marker(
+                [36.7435244, -119.7823578],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_1ae999884c256aa210afde93bd39b3ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91ca6ed6cac3bb1795f1ef3cd82d76d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d181d5b92e2059658e799fbfe84945d6 = $(`<div id="html_d181d5b92e2059658e799fbfe84945d6" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Moon-Park-IM-.jpg?id=jyKKEx&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Imp5S0tFeCIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.x7XV21p7YTCbYvFNj2UNL6zmbxz5e2FDQ1jN_fyIpUc&signature=7e9e5b0b15daccbbabe34928e8bd04d9be4780eab4a18431ecf587a68696f982 alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Moon Park</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2023</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">IM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Sleep Medicine Ucsf Fresno</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Fellowship</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_91ca6ed6cac3bb1795f1ef3cd82d76d2.setContent(html_d181d5b92e2059658e799fbfe84945d6);
+            
+        
+
+        marker_5c6634ec89499aa687b3ebcb92088fcc.bindPopup(popup_91ca6ed6cac3bb1795f1ef3cd82d76d2)
+        ;
+
+        
+    
+    
+            marker_5c6634ec89499aa687b3ebcb92088fcc.bindTooltip(
+                `<div>
+                     Fellowship
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5c6634ec89499aa687b3ebcb92088fcc.setIcon(icon_1ae999884c256aa210afde93bd39b3ed);
+            
+    
+            var marker_847e23c125aba9fa84b1ca15f1d3541c = L.marker(
+                [33.9573004, -116.5008453],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_e2223a55780ee36282e6abcda73612e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_afea2ec0c26cb5a299851ceb8a999a2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ccec838aa81b5697b09249725c2f772 = $(`<div id="html_9ccec838aa81b5697b09249725c2f772" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Ena-Kim.jpg?id=0x44Dy&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjB4NDREeSIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.2_ywFgDVn7pPILK65sVYl-C0J8Yg2MnSsw0C0gZCSSk&signature=7b564118f9b79a78535bf273853a2a7f2ac234053977a223357f3d71fe701fe8 alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Ena Kim</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2024</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Primary Care </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_afea2ec0c26cb5a299851ceb8a999a2e.setContent(html_9ccec838aa81b5697b09249725c2f772);
+            
+        
+
+        marker_847e23c125aba9fa84b1ca15f1d3541c.bindPopup(popup_afea2ec0c26cb5a299851ceb8a999a2e)
+        ;
+
+        
+    
+    
+            marker_847e23c125aba9fa84b1ca15f1d3541c.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_847e23c125aba9fa84b1ca15f1d3541c.setIcon(icon_e2223a55780ee36282e6abcda73612e6);
+            
+    
+            var marker_9ae212869a32c631b4b52d25eaaff7b1 = L.marker(
+                [36.8339657, -119.7642629],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_c501ce84e89382eef504123559eaa9a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a55ed27dd003a1f0803b5db28de42b36 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d4ac9e20a0037e35fb66a0516cd5bb9 = $(`<div id="html_2d4ac9e20a0037e35fb66a0516cd5bb9" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Katarina-Soewono.jpg?id=xpGG5E&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InhwR0c1RSIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.RGSbbRAoHOABr3TVHRqkimoYUwh2UpcXjsngdXtzX6A&signature=bb86cd85761afe32a287e514933d5a42c00fa8f1954247c26284e54672160bb7 alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Katarina Soewono</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2023</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Saint Agnes Medical Center </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_a55ed27dd003a1f0803b5db28de42b36.setContent(html_2d4ac9e20a0037e35fb66a0516cd5bb9);
+            
+        
+
+        marker_9ae212869a32c631b4b52d25eaaff7b1.bindPopup(popup_a55ed27dd003a1f0803b5db28de42b36)
+        ;
+
+        
+    
+    
+            marker_9ae212869a32c631b4b52d25eaaff7b1.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9ae212869a32c631b4b52d25eaaff7b1.setIcon(icon_c501ce84e89382eef504123559eaa9a9);
+            
+    
+            var marker_4fe5476d0ab294e38b42c3a1d20720c7 = L.marker(
+                [36.8339657, -119.7642629],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_4f7472c69af419a1e7f723f2debe3279 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29b8add6570291a71e88767c2aea1ab0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f49e8ce8c70dc951727cc7ae5127922 = $(`<div id="html_6f49e8ce8c70dc951727cc7ae5127922" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Chinedu-Nwagwu.jpg?id=0x44KA&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjB4NDRLQSIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.0BZdd8zcbRirgAwoSzSFgr_Ams8qZIFN-Dyl1eUUE7U&signature=935f6692f0c83cd95edd42d36f2d1d265067648360000d0f10b8877caac24a1e alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Chinedu Nwagwu</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2023</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Samc Vituity </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Hospital</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_29b8add6570291a71e88767c2aea1ab0.setContent(html_6f49e8ce8c70dc951727cc7ae5127922);
+            
+        
+
+        marker_4fe5476d0ab294e38b42c3a1d20720c7.bindPopup(popup_29b8add6570291a71e88767c2aea1ab0)
+        ;
+
+        
+    
+    
+            marker_4fe5476d0ab294e38b42c3a1d20720c7.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4fe5476d0ab294e38b42c3a1d20720c7.setIcon(icon_4f7472c69af419a1e7f723f2debe3279);
+            
+    
+            var marker_c02cc358920273900ef308daa22b951d = L.marker(
+                [37.4414525, -122.1687327],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_ec67c5639ec57913ff93856ae4c9a163 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f6eb6f844fd4bbdc0b87e242ef0ab28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_959b63d180fec8c9c9cc85841961e44d = $(`<div id="html_959b63d180fec8c9c9cc85841961e44d" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Jovanne-Tamparon.jpg?id=WN44xe&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IldONDR4ZSIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.q8BrJH4Spko_UbBFXYuF9yQpju-yLLu8IQ2u99hUjV8&signature=43ca832f60ff30c5ac96c6ed891b8f6d8f84c68ecb3806e50cfa619c03fba501 alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Jovanne Tamparon Rosette</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2023</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Stanford Primary Care </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_7f6eb6f844fd4bbdc0b87e242ef0ab28.setContent(html_959b63d180fec8c9c9cc85841961e44d);
+            
+        
+
+        marker_c02cc358920273900ef308daa22b951d.bindPopup(popup_7f6eb6f844fd4bbdc0b87e242ef0ab28)
+        ;
+
+        
+    
+    
+            marker_c02cc358920273900ef308daa22b951d.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c02cc358920273900ef308daa22b951d.setIcon(icon_ec67c5639ec57913ff93856ae4c9a163);
+            
+    
+            var marker_2461ed7cae3b26228f64068178347a03 = L.marker(
+                [36.808229, -119.6772129],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_4d59fc38385e148adef22419279c36fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3db2cfb82fe4dd95a10d2deda9b99b50 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb48a45701438037e44ff635eefb14d1 = $(`<div id="html_cb48a45701438037e44ff635eefb14d1" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Malalai-Zoltani.jpg?id=xpGKJo&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InhwR0tKbyIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.NkslqqSViHh1SE1wa2uk6sWlRWREtlDfV5oCDYvCnAE&signature=bce4e77b25401550a351d2a4796cd1ef7bb9d8db3e0daf9eaabbd0547e378f58 alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Malalai Zoltani</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2023</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Samp Primary Care </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_3db2cfb82fe4dd95a10d2deda9b99b50.setContent(html_cb48a45701438037e44ff635eefb14d1);
+            
+        
+
+        marker_2461ed7cae3b26228f64068178347a03.bindPopup(popup_3db2cfb82fe4dd95a10d2deda9b99b50)
+        ;
+
+        
+    
+    
+            marker_2461ed7cae3b26228f64068178347a03.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2461ed7cae3b26228f64068178347a03.setIcon(icon_4d59fc38385e148adef22419279c36fc);
+            
+    
+            var marker_9c3bd25da93bcf2e87198c2f11b2d1fd = L.marker(
+                [36.8339657, -119.7642629],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_cb65ff8513d39c0f06b96f74b9fca38e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a3f58d3bbbaebe95ef23cfb61059b89c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2d38b92a4c336f047f160a251663c4e = $(`<div id="html_c2d38b92a4c336f047f160a251663c4e" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Ashley-Allen-MD.png?id=8K97Lz&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjhLOTdMeiIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.hPg3k1rj7kOD6ENv_3AWSYl2nWlKKYlZ_DoNdWdAnVg&signature=3dfd197a3cee661d26711281944ff2203744a16639b8e5106f5a5df608e254d3 alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Ashley Allen</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2024</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">EM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Saint Agnes Medical Center </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Hospital</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_a3f58d3bbbaebe95ef23cfb61059b89c.setContent(html_c2d38b92a4c336f047f160a251663c4e);
+            
+        
+
+        marker_9c3bd25da93bcf2e87198c2f11b2d1fd.bindPopup(popup_a3f58d3bbbaebe95ef23cfb61059b89c)
+        ;
+
+        
+    
+    
+            marker_9c3bd25da93bcf2e87198c2f11b2d1fd.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9c3bd25da93bcf2e87198c2f11b2d1fd.setIcon(icon_cb65ff8513d39c0f06b96f74b9fca38e);
+            
+    
+            var marker_16d7cbd17e758b59f9597ce6c681617e = L.marker(
+                [36.8339657, -119.7642629],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_3108d7ffdb4d92c2904c516cc5dec610 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f261ed82a3882d1925cbd7ff2bd2f163 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c7ac5a91c2ebee3dceafd54d0ad49b28 = $(`<div id="html_c7ac5a91c2ebee3dceafd54d0ad49b28" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Hanna-Barrett-DO.png?id=b7abxL&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImI3YWJ4TCIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.NZWj9G6Qzy23e0SoV2VcAsqJv-fT2Xy7juAkWOCAKBs&signature=529455a9b02b1aad18c96633230af4f045d4672468b159f77c8a0e9a3452e216 alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Hanna Barrett</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2024</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">EM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Saint Agnes Medical Center</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Hospital</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_f261ed82a3882d1925cbd7ff2bd2f163.setContent(html_c7ac5a91c2ebee3dceafd54d0ad49b28);
+            
+        
+
+        marker_16d7cbd17e758b59f9597ce6c681617e.bindPopup(popup_f261ed82a3882d1925cbd7ff2bd2f163)
+        ;
+
+        
+    
+    
+            marker_16d7cbd17e758b59f9597ce6c681617e.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_16d7cbd17e758b59f9597ce6c681617e.setIcon(icon_3108d7ffdb4d92c2904c516cc5dec610);
+            
+    
+            var marker_51ec5066a0839b2d72f3e3228d90fb74 = L.marker(
+                [36.8339657, -119.7642629],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_44e74831ed53e0cbcb6246b5ebc4d0e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6060265de01223c19f675a0de2b6d5a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db583d87f6abe3905affa05775410aa7 = $(`<div id="html_db583d87f6abe3905affa05775410aa7" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Adriel-Green-MD.png?id=7WQ6dP&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjdXUTZkUCIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.dN-w3tT6iFa-hrU2qQG1WV2BL7f7GjDktKpJfm__xkA&signature=5656d42e2c7d2bf542ec998b1ec80b206b15f01098b9b91a4de4cdbf1ea0719c alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Adriel Green</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2024</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">EM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Saint Agnes Medical Center</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Hospital</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_c6060265de01223c19f675a0de2b6d5a.setContent(html_db583d87f6abe3905affa05775410aa7);
+            
+        
+
+        marker_51ec5066a0839b2d72f3e3228d90fb74.bindPopup(popup_c6060265de01223c19f675a0de2b6d5a)
+        ;
+
+        
+    
+    
+            marker_51ec5066a0839b2d72f3e3228d90fb74.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_51ec5066a0839b2d72f3e3228d90fb74.setIcon(icon_44e74831ed53e0cbcb6246b5ebc4d0e3);
+            
+    
+            var marker_3695e76beb85011bb8fbc388ab121ec5 = L.marker(
+                [36.841648, -119.7616813],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_afa910562dd3ac07b9c980eeb975deb4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_884b4a0e86250676e571903d04bbf697 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a79ec4513c8067b00e0ab4700624d5be = $(`<div id="html_a79ec4513c8067b00e0ab4700624d5be" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Harinder-Gill.jpg?id=5zNWMv&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjV6TldNdiIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.rxOb8IicOQJpJn-J6lfiMaXAhFjuhBODJN0tJMzsz3A&signature=a9217855b0026934a4f3a447fb144dc2a60b48bb94d0173e98c66df9d1e2e92f alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Harinder Gill</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2023</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Samp Primary Care </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_884b4a0e86250676e571903d04bbf697.setContent(html_a79ec4513c8067b00e0ab4700624d5be);
+            
+        
+
+        marker_3695e76beb85011bb8fbc388ab121ec5.bindPopup(popup_884b4a0e86250676e571903d04bbf697)
+        ;
+
+        
+    
+    
+            marker_3695e76beb85011bb8fbc388ab121ec5.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3695e76beb85011bb8fbc388ab121ec5.setIcon(icon_afa910562dd3ac07b9c980eeb975deb4);
+            
+    
+            var marker_b23a4f137d21f0278bd5a8b394c6bcf9 = L.marker(
+                [36.8377344, -119.6665173],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_dcb47a2ab864913f9d0504846b17ec82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08da183a15b55bdb5ae047efe904ebf8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_944ff9ca84e5253d8519f7e2f78638b7 = $(`<div id="html_944ff9ca84e5253d8519f7e2f78638b7" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Alvin-Vong-FM-PGY-3.jpg?id=V0r2AM&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlYwcjJBTSIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.ilaWffY0wGRsviUK0_PWr809I2PbkzxebntRDHjr90E&signature=9f68cd294ed22a01a89d5b1006ff82168c801b7a3591142e2286d3502c7656fe alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Alvin Vong</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2022</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Samp Primary Care </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_08da183a15b55bdb5ae047efe904ebf8.setContent(html_944ff9ca84e5253d8519f7e2f78638b7);
+            
+        
+
+        marker_b23a4f137d21f0278bd5a8b394c6bcf9.bindPopup(popup_08da183a15b55bdb5ae047efe904ebf8)
+        ;
+
+        
+    
+    
+            marker_b23a4f137d21f0278bd5a8b394c6bcf9.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b23a4f137d21f0278bd5a8b394c6bcf9.setIcon(icon_dcb47a2ab864913f9d0504846b17ec82);
+            
+    
+            var marker_928e2a2eec0153aae24b72c4ab4351fd = L.marker(
+                [36.8339657, -119.7642629],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_7e92ecc2baca376fd009192b2ddbf877 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c03f0d345c6fa445e9688c47a0bec4c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d9e961ecd8af2220c8ce68350cb1e74 = $(`<div id="html_8d9e961ecd8af2220c8ce68350cb1e74" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Kal-Caldera-FM-Chief-PGY-3.jpg?id=WN4x7j&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IldONHg3aiIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.hKuwxTUEYM6c4e67KOEfBcwIHxjBhzYtQCcbIk76_gU&signature=babe8cccd6303bf5b014686fb1ef502522411981de57bee1a584f7cc06bcce5b alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Kal Caldera</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2022</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Saint Agnes Sports Medicine Fellowship </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Hospital</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_7c03f0d345c6fa445e9688c47a0bec4c.setContent(html_8d9e961ecd8af2220c8ce68350cb1e74);
+            
+        
+
+        marker_928e2a2eec0153aae24b72c4ab4351fd.bindPopup(popup_7c03f0d345c6fa445e9688c47a0bec4c)
+        ;
+
+        
+    
+    
+            marker_928e2a2eec0153aae24b72c4ab4351fd.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_928e2a2eec0153aae24b72c4ab4351fd.setIcon(icon_7e92ecc2baca376fd009192b2ddbf877);
+            
+    
+            var marker_fd9cd613aeacbd562167b8d80149373f = L.marker(
+                [36.8388469, -119.6611827],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_c190c24cace31fbf7ca046e06d315b13 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1023144d1777e26b568129b9cbaeccc5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3ebf99b1cde68f230a742c45b41910e = $(`<div id="html_a3ebf99b1cde68f230a742c45b41910e" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Prabhneet-K-Singh.JPG?id=e6bkVO&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImU2YmtWTyIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.J3HY-66vLldYqQHomCBVfQmpw2Xq_c26qvzN4sj-K3s&signature=b937a0f2c9cdb7c76d9a78e9ed442cbaa150c4d15bde3062edf1482bd47d5b22 alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Prabhneet Singh</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2022</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Chpg Hospitalist</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Hospital</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_1023144d1777e26b568129b9cbaeccc5.setContent(html_a3ebf99b1cde68f230a742c45b41910e);
+            
+        
+
+        marker_fd9cd613aeacbd562167b8d80149373f.bindPopup(popup_1023144d1777e26b568129b9cbaeccc5)
+        ;
+
+        
+    
+    
+            marker_fd9cd613aeacbd562167b8d80149373f.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fd9cd613aeacbd562167b8d80149373f.setIcon(icon_c190c24cace31fbf7ca046e06d315b13);
+            
+    
+            var marker_dc2cc48ea2b8bbec9c0a2416428cee49 = L.marker(
+                [34.1695071, -118.0954879],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_ad70c517f234a6e25bb99c5e3259908a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_428521800ee8c3dfb0704cd438f6810d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b74ded3727a75dcb8d4daf3c4d32c05f = $(`<div id="html_b74ded3727a75dcb8d4daf3c4d32c05f" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Poria-Abdollah-FM-PGY-3.jpg?id=pKglbE&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InBLZ2xiRSIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.XzU8uLAJZpipH-L4-6qLm9xIACeFx6z9VrY_y1UyWOg&signature=13c2d1ba361a5b1097a108fd8bcc12bbbcec756ec7229ee4dd76ef27cb66c80b alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Poria Abdollah</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2022</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Altamed Primary Care </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_428521800ee8c3dfb0704cd438f6810d.setContent(html_b74ded3727a75dcb8d4daf3c4d32c05f);
+            
+        
+
+        marker_dc2cc48ea2b8bbec9c0a2416428cee49.bindPopup(popup_428521800ee8c3dfb0704cd438f6810d)
+        ;
+
+        
+    
+    
+            marker_dc2cc48ea2b8bbec9c0a2416428cee49.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dc2cc48ea2b8bbec9c0a2416428cee49.setIcon(icon_ad70c517f234a6e25bb99c5e3259908a);
+            
+    
+            var marker_1e384c37a7264339c39a3df3ad976800 = L.marker(
+                [36.32282500000001, -119.6695756],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_ecfdfc83d5fb339fbffad32341e26685 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a4dff98b6a980f521087dd43fbbd1b2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78cc93b806e56af71d79cc7e998b1912 = $(`<div id="html_78cc93b806e56af71d79cc7e998b1912" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Maria-Lizbeth-Alvarado-Garcia-FM-PGY-3.jpg?id=0x4p7P&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjB4NHA3UCIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.Sx1NmwbrdG6Z9cS4lHa04xfMg-hTObuyTCCMCJC9r8g&signature=0cba4ca82798ead7ae8fc6ac6f8d80185f1a6ac1d899cede08e271ca1a55cd43 alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Maria Lizbeth Alvarado-Garcia</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2022</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">United Health Centers Primary Care </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_a4dff98b6a980f521087dd43fbbd1b2f.setContent(html_78cc93b806e56af71d79cc7e998b1912);
+            
+        
+
+        marker_1e384c37a7264339c39a3df3ad976800.bindPopup(popup_a4dff98b6a980f521087dd43fbbd1b2f)
+        ;
+
+        
+    
+    
+            marker_1e384c37a7264339c39a3df3ad976800.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1e384c37a7264339c39a3df3ad976800.setIcon(icon_ecfdfc83d5fb339fbffad32341e26685);
+            
+    
+            var marker_9dc414c42ce4437e9b8305e0906515d2 = L.marker(
+                [36.8426753, -119.6599067],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_06e694dc609523bfe153667a5e3bf27d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_97a64846c35a64e64a9d5e8dedcf5baa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8832c42f7949aa0e94c23266a254cd7 = $(`<div id="html_c8832c42f7949aa0e94c23266a254cd7" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Zhoobin-Bateni-FM-PGY-3.jpg?id=OzRW7M&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik96Ulc3TSIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.1No1cHbV1VpSEy_efImMDEvoo41vj8xlnPD4VM5ahgc&signature=f64d7d7260606488bf14f9581a994235a0619068bbec5164031fd6912b59671f alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Zhoobin Bateni</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2022</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">California Urology </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_97a64846c35a64e64a9d5e8dedcf5baa.setContent(html_c8832c42f7949aa0e94c23266a254cd7);
+            
+        
+
+        marker_9dc414c42ce4437e9b8305e0906515d2.bindPopup(popup_97a64846c35a64e64a9d5e8dedcf5baa)
+        ;
+
+        
+    
+    
+            marker_9dc414c42ce4437e9b8305e0906515d2.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9dc414c42ce4437e9b8305e0906515d2.setIcon(icon_06e694dc609523bfe153667a5e3bf27d);
+            
+    
+            var marker_8e835e0a7fc732c2fb52beb00dddcfec = L.marker(
+                [36.82350050000001, -119.7544773],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_eeb9d541aee60c0de547d12453b6b6bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e04bb24d7705ed69affc1a14efd50b9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79b5c93a0bc907efb36e2b210d9aab34 = $(`<div id="html_79b5c93a0bc907efb36e2b210d9aab34" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Farshad-Ostovad.jpg?id=8K90kz&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjhLOTBreiIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.WUA68BRwlfv8dABjJOFQSO3aOuYdaVWZvqt0tjKEkXI&signature=c3151a36097e8e9aeb4c5ae75c73e9f56e4412e839ec2bb842c65758c18f622b alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Farshad Ostovar</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2022</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Vituity Urgent Care </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_e04bb24d7705ed69affc1a14efd50b9b.setContent(html_79b5c93a0bc907efb36e2b210d9aab34);
+            
+        
+
+        marker_8e835e0a7fc732c2fb52beb00dddcfec.bindPopup(popup_e04bb24d7705ed69affc1a14efd50b9b)
+        ;
+
+        
+    
+    
+            marker_8e835e0a7fc732c2fb52beb00dddcfec.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8e835e0a7fc732c2fb52beb00dddcfec.setIcon(icon_eeb9d541aee60c0de547d12453b6b6bd);
+            
+    
+            var marker_0afd7897288f2d56a3ef213dbd8afcbe = L.marker(
+                [46.8476744, -114.0486987],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_d10d05fb6881f13f66d9c50b95ed522d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a9f36b1e9fd524385549f68edb1121b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccba22ce5e01334b0fd742a5f79ea411 = $(`<div id="html_ccba22ce5e01334b0fd742a5f79ea411" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Tatum-Toner-FM-PGY-3.jpg?id=8K9085&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjhLOTA4NSIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.LedSbaiB7688XbsZTLFp7E1SoFFsXKQg-kNdncuwYb0&signature=b4090a14d8859db68502b6b157b6867cfb284a28dda3aa929c9c0a4264fb4ee4 alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Tatum Toner</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2022</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Hospitalist Sound Physicians</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Hospital</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_5a9f36b1e9fd524385549f68edb1121b.setContent(html_ccba22ce5e01334b0fd742a5f79ea411);
+            
+        
+
+        marker_0afd7897288f2d56a3ef213dbd8afcbe.bindPopup(popup_5a9f36b1e9fd524385549f68edb1121b)
+        ;
+
+        
+    
+    
+            marker_0afd7897288f2d56a3ef213dbd8afcbe.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0afd7897288f2d56a3ef213dbd8afcbe.setIcon(icon_d10d05fb6881f13f66d9c50b95ed522d);
+            
+    
+            var marker_77811f44bd226823b6c8f4b65ed9500a = L.marker(
+                [34.0306516, -118.4847652],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_0a5c5396bc63cc295321c7d20b4c0565 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b65579d392b358a17be21135639f7208 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5d185a6828604571e4a2d912ba19b69 = $(`<div id="html_c5d185a6828604571e4a2d912ba19b69" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Greta-Jacobsen.jpg?id=AdkVyB&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkFka1Z5QiIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.oRlvFSHAgYmyXrIrmIb4mgpmr1DUN8rKKV_OeNEGuvo&signature=48d8abf8fa3a8a75e896ba0c5b470f5ac32e67327e01c803dd2efdfe8f47faae alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Greta Jacobsen</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2022</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Providence Primary Care </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_b65579d392b358a17be21135639f7208.setContent(html_c5d185a6828604571e4a2d912ba19b69);
+            
+        
+
+        marker_77811f44bd226823b6c8f4b65ed9500a.bindPopup(popup_b65579d392b358a17be21135639f7208)
+        ;
+
+        
+    
+    
+            marker_77811f44bd226823b6c8f4b65ed9500a.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_77811f44bd226823b6c8f4b65ed9500a.setIcon(icon_0a5c5396bc63cc295321c7d20b4c0565);
+            
+    
+            var marker_0fdc0b00498523b58d3ab1a7cba18061 = L.marker(
+                [37.5284622, -120.8838949],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_613d12879382789e7cb54b8ca5b86a54 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83d3f0e3f4e262f147e9892017daabe8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f914eee2b3e78768d51d24c22fb5d339 = $(`<div id="html_f914eee2b3e78768d51d24c22fb5d339" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Tarnpreet-Kaur.jpg?id=XDjK9V&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlhEaks5ViIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.drjenS98d55klmnpHqujabam83VBhQuhRMPA3yX2_jA&signature=a90ab4a78df530b41af5aed5e49ba1ad669aff26f6fcb2bbabe3c1051982c0ff alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Tarnpreet Kaur</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2023</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Sutter Health</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_83d3f0e3f4e262f147e9892017daabe8.setContent(html_f914eee2b3e78768d51d24c22fb5d339);
+            
+        
+
+        marker_0fdc0b00498523b58d3ab1a7cba18061.bindPopup(popup_83d3f0e3f4e262f147e9892017daabe8)
+        ;
+
+        
+    
+    
+            marker_0fdc0b00498523b58d3ab1a7cba18061.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0fdc0b00498523b58d3ab1a7cba18061.setIcon(icon_613d12879382789e7cb54b8ca5b86a54);
+            
+    
+            var marker_1a42e25a8dd665c071d384ece308481d = L.marker(
+                [36.808229, -119.6772129],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_a50a297a74344a069d75d9206d9d08ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de13b47c02f7c1c6bbcfbdb75f64bee6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f8c0953964186a909509d9d4598d2b6 = $(`<div id="html_3f8c0953964186a909509d9d4598d2b6" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Umair-Khalid-FM-PGY-2.jpg?id=V0rkgg&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlYwcmtnZyIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.8v_bDRRaG-ZcYYUkFp6AFeEpnzBVyCORhg8L59NaaUE&signature=9c1d6d518d8f4662a0e9385c278607882de7e1a9ed5238d76b0b33e097826a32 alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Umair Khalid</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2023</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">FM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Samp Primary Care </td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_de13b47c02f7c1c6bbcfbdb75f64bee6.setContent(html_3f8c0953964186a909509d9d4598d2b6);
+            
+        
+
+        marker_1a42e25a8dd665c071d384ece308481d.bindPopup(popup_de13b47c02f7c1c6bbcfbdb75f64bee6)
+        ;
+
+        
+    
+    
+            marker_1a42e25a8dd665c071d384ece308481d.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1a42e25a8dd665c071d384ece308481d.setIcon(icon_a50a297a74344a069d75d9206d9d08ac);
+            
+    
+            var marker_8b1ffed4f898cb7a5d217f64e50b766c = L.marker(
+                [38.7662511, -121.2492234],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_7d7631b0cd09f48d113e7abaefc7243e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ec3d2eab2cb7170018e9b9133ff939d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_526f0837882926680130bb8687e2f5f7 = $(`<div id="html_526f0837882926680130bb8687e2f5f7" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Tyler-Sullivan-DO.png?id=kyq6MJ&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Imt5cTZNSiIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.NGDwYH7j_Xm6H8OH0OcH4kF429SpymDj8Oel_6hWE_Q&signature=7299e05d864f4d1f7012a24f013aba69a0b0873fb10dfe61caaacba8cfde534d alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Tyler Sullivan</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2024</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">EM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Sutter Roseville Medical Center</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Hospital</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_5ec3d2eab2cb7170018e9b9133ff939d.setContent(html_526f0837882926680130bb8687e2f5f7);
+            
+        
+
+        marker_8b1ffed4f898cb7a5d217f64e50b766c.bindPopup(popup_5ec3d2eab2cb7170018e9b9133ff939d)
+        ;
+
+        
+    
+    
+            marker_8b1ffed4f898cb7a5d217f64e50b766c.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8b1ffed4f898cb7a5d217f64e50b766c.setIcon(icon_7d7631b0cd09f48d113e7abaefc7243e);
+            
+    
+            var marker_795e4ea8985c5e1f9e5a169873cb7aba = L.marker(
+                [38.5722793, -121.455728],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_2e7b73d55de81b6cec0135b149daa418 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d7fb79769239075d78a0b37fa421ec7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d05e8e52332fe949a419ecaa19fd8d2 = $(`<div id="html_4d05e8e52332fe949a419ecaa19fd8d2" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Neilinder-Behniwal.jpg?id=QDLxMY&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlFETHhNWSIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.s-Hg_AQR9zXVnkjJ05UbxyjX9ALvSo9mhdW7bxGT5rc&signature=220aca6ac34a3184914592c7c2d4a55bbe1bcfb8f133a816d75921a040b34d64 alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Neil Behniwal</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2021</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">IM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Sutter Medical Group</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Ambulatory</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_3d7fb79769239075d78a0b37fa421ec7.setContent(html_4d05e8e52332fe949a419ecaa19fd8d2);
+            
+        
+
+        marker_795e4ea8985c5e1f9e5a169873cb7aba.bindPopup(popup_3d7fb79769239075d78a0b37fa421ec7)
+        ;
+
+        
+    
+    
+            marker_795e4ea8985c5e1f9e5a169873cb7aba.bindTooltip(
+                `<div>
+                     Ambulatory
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_795e4ea8985c5e1f9e5a169873cb7aba.setIcon(icon_2e7b73d55de81b6cec0135b149daa418);
+            
+    
+            var marker_19da87812d78d80b6d8dacc79cbef821 = L.marker(
+                [36.8339657, -119.7642629],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_ac2d07a443f0506853a224d62cb335f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dcffa6f9d7a315d506f25b0a3984b7bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf70020181d2c79afadc175d08ed9cfd = $(`<div id="html_bf70020181d2c79afadc175d08ed9cfd" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Mehrab-Devani.jpg?id=AdZ62e&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkFkWjYyZSIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.-9i9Op1Lw3th0MfWoXt3KI-KRn7SDgfrefIMQwv1mDI&signature=cc7d01bbd317e9d81bc50d7f31263fe29ff45ddfba6633408115c8d81118c91f alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Mehrab Devani</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2021</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">IM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Samc</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Hospital</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_dcffa6f9d7a315d506f25b0a3984b7bd.setContent(html_bf70020181d2c79afadc175d08ed9cfd);
+            
+        
+
+        marker_19da87812d78d80b6d8dacc79cbef821.bindPopup(popup_dcffa6f9d7a315d506f25b0a3984b7bd)
+        ;
+
+        
+    
+    
+            marker_19da87812d78d80b6d8dacc79cbef821.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_19da87812d78d80b6d8dacc79cbef821.setIcon(icon_ac2d07a443f0506853a224d62cb335f2);
+            
+    
+            var marker_32b1a8149d3ff6f6eba7272ecccacde7 = L.marker(
+                [36.8339657, -119.7642629],
+                {
+}
+            ).addTo(marker_cluster_1fb13fb45acd007f3ccb602e5747db69);
+        
+    
+            var icon_a016066a63140ef546387be1d243d3a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_938bffd01d119cffa92ded9689e1c361 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48b621bc58699784c613540887994965 = $(`<div id="html_48b621bc58699784c613540887994965" style="width: 100.0%; height: 100.0%;">         <!DOCTYPE html>         <html>         <center><img src=https://storage.tally.so/private/Inderbir-Baadh-2-.jpg?id=a6Vj2b&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImE2VmoyYiIsImZvcm1JZCI6IjNFTU15NCIsImlhdCI6MTc0MjA2ODY3NX0.zbt6n95xiKZrFpqwoIxCreTRgJsfoBoZNgBpwZYkXBs&signature=d7f71e6d93d239192f2e536dc36c3662ea59f104a57b1d835bc64c3d127a3818 alt="logo" width=100 height=100></center>          <center><h4 style="margin-bottom:5"; width="200px">Inderbir Baadh</h4></center>          <center>         <table style="height: 126px; width: 305px;">                  <tbody>         <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Year Graduated </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">2021</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Department </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">IM</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Employer </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Samc</td>         </tr>                  <tr>         <td style="background-color: #3e95b5; padding: 5px"><span style="color: #ffffff;"> Work Setting </span></td>         <td style="width: 150px;background-color: #f2f9ff; padding: 5px">Hospital</td>         </tr>         </tbody>         </table>         </center>         </html>         </div>`)[0];
+                popup_938bffd01d119cffa92ded9689e1c361.setContent(html_48b621bc58699784c613540887994965);
+            
+        
+
+        marker_32b1a8149d3ff6f6eba7272ecccacde7.bindPopup(popup_938bffd01d119cffa92ded9689e1c361)
+        ;
+
+        
+    
+    
+            marker_32b1a8149d3ff6f6eba7272ecccacde7.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_32b1a8149d3ff6f6eba7272ecccacde7.setIcon(icon_a016066a63140ef546387be1d243d3a9);
+            
+    
+            marker_cluster_1fb13fb45acd007f3ccb602e5747db69.addTo(map_6e8c1f080642f65fee92927f445d3045);
+        
+</script>
+</html>
