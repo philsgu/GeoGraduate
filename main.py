@@ -8,7 +8,7 @@ import streamlit_ext as ste
 
 st.title("SAMC GME Graduate Data Map")
 st.write("""
-         This map shows the locations of all the GME graduates from SAMC and their whereabouts after graduation. The data is sourced from the SAMC GME Office and is updated every year. Extraction method from Google Sheet and Geo Encoding is done using Python. The data is then visualized using Folium and Streamlit. Questions: phillip.kim@samc.org | Last updated: 3/16/25
+         This map shows the locations of all the GME graduates from SAMC and their whereabouts after graduation. The data is sourced from the SAMC GME Office and is updated every year. Extraction method from Google Sheet and Geo Encoding is done using Python. The data is then visualized using Folium and Streamlit. Developed by: Phillip Kim, MD | Last updated: 3/16/25
          """
          )
 
