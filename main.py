@@ -39,8 +39,8 @@ def extract_lat_long_via_address(address_or_zipcode):
         print(f"Error processing address '{address_or_zipcode}': {e}")
     return lat, lng
 
-df['lat'] = df['Employer Full Address'].apply(lambda x: extract_lat_long_via_address(x)[0])
-df['lng'] = df['Employer Full Address'].apply(lambda x: extract_lat_long_via_address(x)[1])
+df['lat'] = df['Employer Full Address PLEASE keep in format include comma (ADDRESS, CITY, STATE, ZIP)'].apply(lambda x: extract_lat_long_via_address(x)[0])
+df['lng'] = df['Employer Full Address PLEASE keep in format include comma (ADDRESS, CITY, STATE, ZIP)'].apply(lambda x: extract_lat_long_via_address(x)[1])
 
 missing_coordinate = df[df['lat'].isna() & df['lng'].isna()]
  #drop NaN and reset index to avoid indexing errors
