@@ -187,6 +187,12 @@ def show_map():
         st.subheader('❌ Graduate(s) with Unlocatable Work Address')
         unlocatable_names = missing_coordinate['Graduate Full Name'].tolist()
         st.write(", ".join(unlocatable_names))
+    # Display graduates by work setting
+    st.subheader('🏢 Graduates by Work Setting')
+    work_setting_counts = df['Work Setting'].value_counts()
+    work_setting_percentages = (work_setting_counts / total_graduates) * 100
+    work_setting_str = ", ".join([f'**{setting}**: {count} ({percentage:.2f}%)' for setting, count, percentage in zip(work_setting_counts.index, work_setting_counts, work_setting_percentages)])
+    st.markdown(work_setting_str)
 
 
         
