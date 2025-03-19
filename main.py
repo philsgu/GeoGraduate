@@ -5,12 +5,9 @@ import folium
 from folium.plugins import MarkerCluster
 from streamlit_folium import folium_static
 import streamlit_ext as ste
+# Extract the last update date from the data
 
-st.title("SAMC GME Graduate Data Map")
-st.write("""
-         This map shows the locations of all the GME graduates from SAMC and their whereabouts after graduation. The data is sourced from the SAMC GME Office and is updated every year. Extraction method from Google Sheet and Geo Encoding is done using Python. The data is then visualized using Folium and Streamlit. Developed by: Phillip Kim, MD | Last updated: 3/16/25
-         """
-         )
+
 
 sheet_url = "https://docs.google.com/spreadsheets/d/1-r0gE0J4HMAOOd0e-sLI_3xbJNtLXFPxUjAh-XlM3OI/edit?usp=sharing"
 sheet_id = sheet_url.split("/")[5]
@@ -21,6 +18,17 @@ def load_data(url):
     return pd.read_csv(url)
 
 df = load_data(url_sheet)
+total_graduates = len(df)
+#Convert 'Submitted at' column to datetime format
+df['Submitted at'] = pd.to_datetime(df['Submitted at'], errors='coerce')
+
+last_update_date = df['Submitted at'].max().strftime('%m/%d/%Y')
+
+st.title("SAMC GME Graduate Data Map")
+st.write(f"""
+         This map shows the locations of all the GME graduates from SAMC and their whereabouts after graduation. The data is sourced from the SAMC GME Office and is updated every year. Extraction method from Google Sheet and Geo Encoding is done using Python. The data is then visualized using Folium and Streamlit. Developed by: Phillip Kim, MD | Last updated: {last_update_date}
+         """
+         )
 
 @st.cache_data
 def extract_lat_long_via_address(address_or_zipcode):
@@ -44,8 +52,8 @@ df['lng'] = df['Employer Full Address PLEASE keep in format include comma (ADDRE
 
 missing_coordinate = df[df['lat'].isna() & df['lng'].isna()]
  #drop NaN and reset index to avoid indexing errors
-df.dropna(subset=["lat"])
-df.reset_index(drop=True)
+df.dropna(subset=["lat", "lng"], inplace=True)
+df.reset_index(drop=True, inplace=True)
 
 df['Graduate Full Name'] = df['Graduate Full Name'].str.strip()
 df['Graduate Full Name'] = df['Graduate Full Name'].str.title()
@@ -110,22 +118,23 @@ def show_map():
     # add the markers the the cluster layers so that they are automatically cluster
     for i,r in df.iterrows():
         location = (r["lat"], r["lng"])
-        # highlight differtn work settings with different colors 
-        worksetting = df['Work Setting'].iloc[i]
-        if worksetting == "Ambulatory":
-            color = "green"
-            tooltip = "Ambulatory"
-        elif worksetting == "Hospital":
-            color = "red"
-            tooltip = "Hospital"
-        elif worksetting == "Fellowship":
-            color = "blue"
-            tooltip = "Fellowship"
-        else:
-            color = "black"
-            tooltip = "Other"
-        
-        folium.Marker(location=location, popup=popup_html(i), tooltip=tooltip, icon=folium.Icon(color=color, icon='user', prefix='fa')).add_to(marker_cluster)
+        if pd.notna(location[0]) and pd.notna(location[1]):
+            # highlight different work settings with different colors 
+            worksetting = df['Work Setting'].iloc[i]
+            if worksetting == "Ambulatory":
+                color = "green"
+                tooltip = "Ambulatory"
+            elif worksetting == "Hospital":
+                color = "red"
+                tooltip = "Hospital"
+            elif worksetting == "Fellowship":
+                color = "blue"
+                tooltip = "Fellowship"
+            else:
+                color = "black"
+                tooltip = "Other"
+            
+            folium.Marker(location=location, popup=popup_html(i), tooltip=tooltip, icon=folium.Icon(color=color, icon='user', prefix='fa')).add_to(marker_cluster)
 
     m.save("geo_graduates.html")
     folium_static(m, width=725)
@@ -140,11 +149,11 @@ def show_map():
         )
         st.write("Use a browser to open the downloaded HTML file for offline viewing")
     
-    # Display total graudates and respective departments
-    total_graduates = len(df)
-    st.subheader(f'Total Graduates: {total_graduates}')
+    # Display total graduates and respective departments
+    
+    st.subheader(f'🎓 Total Graduates: {total_graduates}')
     grad_dept_counts = df['Which Graduating Department'].value_counts()
-    st.subheader('Graduates by Department')
+    st.subheader('🪴 Graduates by Department')
     dept_mapping = {
         "EM": "Emergency Medicine",
         "IM": "Internal Medicine",
@@ -171,7 +180,13 @@ def show_map():
     central_valley_count = len(central_valley_graduates)
     central_valley_percentage = (central_valley_count / total_graduates) * 100
 
-    st.subheader(f'Graduates in Central Valley, CA: {central_valley_count} ({central_valley_percentage:.2f}%)')
+    st.subheader(f'✅ Graduates in Central Valley, CA: {central_valley_count} ({central_valley_percentage:.2f}%)')
+    # Display names of graduates whose addresses could not be geocoded
+    if not missing_coordinate.empty:
+        st.subheader('❌ Graduate(s) with Unlocatable Work Address')
+        unlocatable_names = missing_coordinate['Graduate Full Name'].tolist()
+        st.write(", ".join(unlocatable_names))
+
 
         
 if __name__ == "__main__":
