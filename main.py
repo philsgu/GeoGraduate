@@ -166,11 +166,12 @@ def show_map():
 
     # Define the bounding box for Central Valley, California
     central_valley_bbox = {
-        "north": 37.9,  # Adjusted to exclude Sacramento region
-        "south": 34.5,
-        "west": -121.5,
-        "east": -118.5
-    }
+       "north": 38.5,  # Northern boundary near southern San Joaquin County
+        "south": 34.5,  # Southern boundary near southern Kern County
+        "west": -122.0, # Western boundary near the Coast Ranges
+        "east": -118.5  # Eastern boundary near the Sierra Nevada foothills
+        }
+    
 
     def is_in_central_valley(lat, lng):
         return (central_valley_bbox["south"] <= lat <= central_valley_bbox["north"] and
